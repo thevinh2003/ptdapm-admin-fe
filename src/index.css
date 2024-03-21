@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border m-0 p-0;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+/* list style none */
+ul {
+  @apply list-none;
+}
+
+hr {
+  @apply border border-gray-50;
+}
+
+input,
+textarea,
+button,
+select {
+  @apply outline-none text-base border-none placeholder:text-sm placeholder:font-sans;
+}
+
+button[type="submit"] {
+  @apply cursor-pointer;
+}
+
+a {
+  @apply no-underline text-inherit;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+/* Custom antd */
+.ant-input::placeholder {
+  @apply text-gray-500;
+}
+
+.ant-input::placeholder {
+  @apply text-gray-500;
+}
+
+.ant-input:focus {
+  @apply shadow-none;
+}
+
+.ant-btn-primary {
+  @apply !bg-[#1677ff] hover:opacity-80;
+}
+
+.ant-float-btn-default .ant-float-btn-body:hover {
+  @apply bg-red-300;
+}
+
+.ant-float-btn-default .ant-float-btn-body {
+  @apply bg-red-400;
+}
+
+.ant-notification
+  .ant-notification-notice-wrapper
+  .ant-notification-notice-with-icon
+  .ant-notification-notice-message {
+  @apply font-semibold;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cccbcb;
+  border-radius: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9e9d9d;
+  border-radius: 20px;
+}
